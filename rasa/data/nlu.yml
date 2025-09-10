@@ -1,0 +1,70 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you around
+    - bye bye
+    - have a nice day
+    - see you later
+    - bye
+
+- intent: inquire_admission
+  examples: |
+    - How do I apply for admission?
+    - What's the admission process?
+    - I want to apply to the university
+    - Admission requirements
+    - How to get admitted?
+    - How can I join this college?
+    - What do I need for admission?
+
+- intent: inquire_exams
+  examples: |
+    - When are the exams?
+    - Exam schedule
+    - Final exam dates
+    - When is the midterm?
+    - Examination timetable
+    - When are semester exams?
+    - What's the exam schedule?
+
+- intent: inquire_fees
+  examples: |
+    - How much are the fees?
+    - Tuition fees
+    - Payment methods
+    - When to pay fees?
+    - Fee structure
+    - How much does it cost?
+    - What are the tuition fees?
+
+- intent: inquire_courses
+  examples: |
+    - What courses are offered?
+    - Available programs
+    - Course catalog
+    - What majors do you have?
+    - List of courses
+    - What programs are available?
+    - What degrees do you offer?
+
+- intent: inquire_campus
+  examples: |
+    - Where is the campus?
+    - Campus location
+    - How to reach campus?
+    - Campus facilities
+    - Campus map
+    - Where are you located?
+    - What facilities are available?

@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - inquire_admission
+  - inquire_exams
+  - inquire_fees
+  - inquire_courses
+  - inquire_campus
+
+responses:
+  utter_greet:
+  - text: "Hello! I'm your student helpdesk assistant. How can I help you today?"
+  
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+  - text: "See you later!"
+  - text: "Bye! Come back if you have more questions."
+  
+  utter_admission_info:
+  - text: "You can apply for admission through our online portal. The application requires your academic transcripts, identification documents, and a statement of purpose. The admission deadline is usually June 30th for the fall semester."
+  
+  utter_exam_info:
+  - text: "Exams are scheduled at the end of each semester. The exact dates are published on the student portal at the beginning of the semester. Final exams typically occur in the last two weeks of the semester."
+  
+  utter_fee_info:
+  - text: "Tuition fees vary by program. You can find the detailed fee structure on our website. We accept various payment methods including online transfers, credit cards, and installment plans. Payment deadlines are strictly enforced."
+  
+  utter_course_info:
+  - text: "We offer a wide range of courses in Engineering, Business, Arts, and Sciences. You can browse the complete course catalog on our website. Popular programs include Computer Science, Business Administration, and Electrical Engineering."
+  
+  utter_campus_info:
+  - text: "Our campus is located at 123 Education Street, Knowledge City. We have state-of-the-art facilities including libraries, labs, sports complexes, and student centers. The campus is open from 7 AM to 10 PM on weekdays."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

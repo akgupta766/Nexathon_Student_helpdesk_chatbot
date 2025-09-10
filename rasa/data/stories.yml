@@ -1,0 +1,41 @@
+version: "3.1"
+
+stories:
+- story: greet and inquire admission
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_admission
+  - action: utter_admission_info
+
+- story: directly inquire exams
+  steps:
+  - intent: inquire_exams
+  - action: utter_exam_info
+
+- story: inquire fees
+  steps:
+  - intent: inquire_fees
+  - action: utter_fee_info
+
+- story: inquire courses
+  steps:
+  - intent: inquire_courses
+  - action: utter_course_info
+
+- story: inquire campus
+  steps:
+  - intent: inquire_campus
+  - action: utter_campus_info
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye

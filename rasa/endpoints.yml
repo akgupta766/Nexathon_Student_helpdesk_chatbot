@@ -1,0 +1,19 @@
+# This file contains the endpoints for the models and
+# connectors that your bot uses.
+
+# Server for the bot's custom actions
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store which is used to store the conversations.
+# By default the conversations are stored in memory.
+tracker_store:
+  type: InMemoryTrackerStore
+
+# Event broker which is used to stream the events to another application.
+event_broker:
+  type: pika
+  url: localhost
+  username: guest
+  password: guest
+  queue: rasa_core_events
